@@ -1,5 +1,51 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--color);
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 5;
+  background-image: var(--header-image, url('../images/cover-image.png'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fullscreen-block {
+  min-block-size: 100vh;
+  padding: 10px;
+}
+
+.header__top-decoration {
+  position: relative;
+  padding: 8px;
+}
+
+.header__top-decoration__content {
+  position: absolute;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__top-decoration__content::before {
+  content: 'Rec';
+  text-transform: uppercase;
+  color: var(--accent-color, #ff0070);
+}
+
+.header__top-decoration__content::after {
+  content: '';
+  background-color: var(--accent-color, #ff0070);
+  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
 }
