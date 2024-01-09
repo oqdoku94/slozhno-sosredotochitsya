@@ -9,7 +9,7 @@
 .header {
   display: grid;
   grid-template-rows: 5;
-  background-image: var(--header-image, url('../images/cover-image.png'));
+  background-image: var(--header-image, url(../images/cover-image.png));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

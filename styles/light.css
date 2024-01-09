@@ -10,12 +10,13 @@
   /* Акцентный цвет для кнопки и заголовков более низкого увроня */
   --accent-color: #ff8dcb;
   /* Цвет фона страницы */
-  --background-color: #FFF1F7;
+  --background-color: #fff1f7;
   /* Фон шапки */
-  --header-image: url(../images/cover-image-light.png)
+  --header-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
+
   :root {
     /* Основной цвет текста страницы */
     --color: #353430;
@@ -28,8 +29,8 @@
     /* Акцентный цвет для кнопки и заголовков более низкого увроня */
     --accent-color: #ff8dcb;
     /* Цвет фона страницы */
-    --background-color: #FFF1F7;
+    --background-color: #fff1f7;
     /* Фон шапки */
-    --header-image: url(../images/cover-image-light.png)
+    --header-image: url(../images/cover-image-light.png);
   }
 }

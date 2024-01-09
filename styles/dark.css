@@ -1,25 +1,26 @@
 .page.theme_dark {
-    /* Основной цвет текста страницы */
-    --color: #f1b2ce;
-    /* Цвет заголовка (в шапке и в подвале) */
-    --header-color: #db00ff;
-    /* Цвет текста выделенного кастомным фоном */
-    --colored-text: #000028;
-    /* Фон для выделенного текста */
-    --colored-text-background: #ff0070;
-    /* Акцентный цвет для кнопки и заголовков более низкого увроня */
-    --accent-color: #ff0070;
-    /* Цвет фона страницы */
-    --background-color: #000028;
-    /* Преобладающий шрифт */
-    --font-family: 'IBM Plex Mono', sans-serif;
-    /* Основной размер шрифта */
-    --font-size: 18px;
-    /* Фон шапки */
-    --header-image: url(../images/cover-image-dark.png)
+  /* Основной цвет текста страницы */
+  --color: #f1b2ce;
+  /* Цвет заголовка (в шапке и в подвале) */
+  --header-color: #db00ff;
+  /* Цвет текста выделенного кастомным фоном */
+  --colored-text: #000028;
+  /* Фон для выделенного текста */
+  --colored-text-background: #ff0070;
+  /* Акцентный цвет для кнопки и заголовков более низкого увроня */
+  --accent-color: #ff0070;
+  /* Цвет фона страницы */
+  --background-color: #000028;
+  /* Преобладающий шрифт */
+  --font-family: 'IBM Plex Mono', sans-serif;
+  /* Основной размер шрифта */
+  --font-size: 18px;
+  /* Фон шапки */
+  --header-image: url(../images/cover-image-dark.png);
 }
 
 @media (prefers-color-scheme: dark) {
+
   :root {
     /* Основной цвет текста страницы */
     --color: #f1b2ce;
@@ -38,6 +39,6 @@
     /* Основной размер шрифта */
     --font-size: 18px;
     /* Фон шапки */
-    --header-image: url(../images/cover-image-dark.png)
+    --header-image: url(../images/cover-image-dark.png);
   }
-} 
+}
