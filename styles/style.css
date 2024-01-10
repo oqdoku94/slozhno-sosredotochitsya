@@ -6,7 +6,7 @@
   /* Цвет фона (для второй страницы и далее) #000028 - темная тема, #fff1f7 - светлая тема (по макету)  */
   background-color: var(--background-color, #000028);
   /* Семейство шрифтов "font-family: IBM Plex Mono;" (по макету) */
-  font-family: var(--font-family, 'IBM Plex Mono', sans-serif);
+  font-family: var(--font-family, 'IBM Plex Mono', monospace);
   /* Размер шрифта 18px (по макету) */
   font-size: var(--font-size, 18px);
   /* Основной цвет текста страницы - #f1b2ce - темная тема, #353430 - светлая тема (по макету)  */
@@ -75,7 +75,7 @@
 .decorated-zone__rec::before {
   content: 'rec';
   text-transform: uppercase;
-  font-family: var(--font-family, 'IBM Plex Mono', sans-serif);
+  font-family: var(--font-family, 'IBM Plex Mono', monospace);
   line-height: 25px;
 }
 
@@ -150,9 +150,8 @@
   justify-self: end;
 }
 
-.accent-text {
+.title-decor {
   color: var(--colored-text, #000028);
-  display: block;
   font-weight: 700;
   background-color: var(--colored-text-background, #ff0070);
 }

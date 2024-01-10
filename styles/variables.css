@@ -12,7 +12,7 @@
   /* Цвет фона страницы */
   --background-color: #000028;
   /* Преобладающий шрифт */
-  --font-family: 'IBM Plex Mono', sans-serif;
+  --font-family: 'IBM Plex Mono', monospace;
   /* Основной размер шрифта */
   --font-size: 18px;
   /* Фон шапки */
