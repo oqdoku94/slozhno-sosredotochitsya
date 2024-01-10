@@ -40,20 +40,21 @@
 
 .decorated-zone__rec {
   position: absolute;
-  inset-inline-end: 18px;
+  inset-inline-end: 19px;
   inset-block-start: 10px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: 10px;
   visibility: var(--rec-visible, visible);
+  color: var(--accent-color, #ff0070);
 }
 
 .decorated-zone__rec::before {
   content: 'rec';
   text-transform: uppercase;
   font-family: var(--font-family, 'IBM Plex Mono', sans-serif);
-  color: var(--accent-color, #ff0070);
+  line-height: 25px;
 }
 
 .decorated-zone__rec::after {
