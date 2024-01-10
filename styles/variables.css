@@ -19,4 +19,6 @@
   --header-image: url(../images/cover-image-dark.png);
   /* Показывать ли блок с декоративным 'REC' */
   --rec-visible: visible;
+  /* Цвет обоводки для кнопок смены темы при наведении */
+  --button-border-hover: rgb(255 0 112 / 0.4);
 }

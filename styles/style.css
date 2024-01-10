@@ -1,20 +1,42 @@
+/* Базовая стилизация макета Mobile First 375 x 668 */
+
+/* Задаем родительские преобладающие свойства для макета */
+
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-color: var(--background-color);
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  color: var(--color);
+  /* Цвет фона (для второй страницы и далее) #000028 - темная тема, #fff1f7 - светлая тема (по макету)  */
+  background-color: var(--background-color, #000028);
+  /* Семейство шрифтов "font-family: IBM Plex Mono;" (по макету) */
+  font-family: var(--font-family, 'IBM Plex Mono', sans-serif);
+  /* Размер шрифта 18px (по макету) */
+  font-size: var(--font-size, 18px);
+  /* Основной цвет текста страницы - #f1b2ce - темная тема, #353430 - светлая тема (по макету)  */
+  color: var(--color, #f1b2ce);
+  line-height: 23.4px;
+  /* Фоновая картинка в зависимости от темы (для темной темы - cover-image-dark.png, для светлой -  cover-image-light.png) */
+  background-image: var(--header-image, url(../images/cover-image.png));
+  /* Помещаем картинку в блок с учетом масштабирования */
+  background-size: cover;
+  /* Центрируем помещенную картинку */
+  background-position: center;
+  /* Если вдруг картинка не на весь фон - не повторяем*/
+  background-repeat: no-repeat;
+  /* Фиксируем */
+  background-attachment: fixed;
 }
 
+/* Стили шапки */
+
 .header {
-  background-image: var(--header-image, url(../images/cover-image.png));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* Отступ со всех сторон  */
   padding: 10px;
+  /* Размер шапки на весь экран */
   min-block-size: 100vh;
+  /* Размещение элементов в сетку */
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: start;
+  color: var(--accent-color, #ff0070);
+  position: relative;
 }
 
 .decorated-zone::before,
@@ -22,20 +44,21 @@
   content: '';
   block-size: 25px;
   inline-size: 25px;
+  position: absolute;
 }
 
 .decorated-zone::before {
   border-block-start: 1px solid var(--accent-color, #ff0070);
   border-inline-end: 1px solid var(--accent-color, #ff0070);
-  align-self: self-start;
-  justify-self: self-end;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
 }
 
 .decorated-zone::after {
   border-block-end: 1px solid var(--accent-color, #ff0070);
   border-inline-start: 1px solid var(--accent-color, #ff0070);
-  align-self: self-end;
-  justify-self: self-start;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
 }
 
 .decorated-zone__rec {
@@ -47,7 +70,6 @@
   align-items: center;
   gap: 10px;
   visibility: var(--rec-visible, visible);
-  color: var(--accent-color, #ff0070);
 }
 
 .decorated-zone__rec::before {
@@ -64,4 +86,73 @@
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
+}
+
+.header__menu {
+  align-self: center;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  font-family: inherit;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  line-height: 18px;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+}
+
+.header__theme-menu-item {
+  height: 26px;
+  padding-inline: 6.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+}
+
+.header__theme-menu-item:hover {
+  border: 1px solid var(--button-border-hover, rgb(255 0 112 / 0.4));
+}
+
+.header__theme-menu-list {
+  display: grid;
+  row-gap: 10px;
+  align-items: center;
+  justify-items: end;
+}
+
+.header__theme-menu-item:has(.header__theme-menu-button_active) {
+  pointer-events: none;
+  border: 1px solid var(--accent-color, #ff0070);
+}
+
+.header-title {
+  color: var(--header-color, #db00ff);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 #ff0070;
+  align-self: center;
+}
+
+.header-text {
+  /* Отступ сверху для текста (по макету 55px, 40px - подгон по PP) */
+  /* padding-block-start: 40px; */
+  align-self: center;
+  justify-self: end;
+}
+
+.accent-text {
+  color: var(--colored-text, #000028);
+  display: block;
+  font-weight: 700;
+  background-color: var(--colored-text-background, #ff0070);
 }
