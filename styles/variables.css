@@ -17,4 +17,6 @@
   --font-size: 18px;
   /* Фон шапки */
   --header-image: url(../images/cover-image-dark.png);
+  /* Показывать ли блок с декоративным 'REC' */
+  --rec-visible: visible;
 }

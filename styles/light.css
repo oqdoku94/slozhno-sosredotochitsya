@@ -13,10 +13,11 @@
   --background-color: #fff1f7;
   /* Фон шапки */
   --header-image: url(../images/cover-image-light.png);
+  /* Показывать ли блок с декоративным 'REC' */
+  --rec-visible: hidden;
 }
 
 @media (prefers-color-scheme: light) {
-
   :root {
     /* Основной цвет текста страницы */
     --color: #353430;
@@ -24,7 +25,7 @@
     --header-color: #ffc2e6;
     /* Цвет текста выделенного кастомным фоном */
     --colored-text: #353430;
-    /* Фон для выделенного текста */
+    /* Красный фон для выделенного текста */
     --colored-text-background: #ffc2e6;
     /* Акцентный цвет для кнопки и заголовков более низкого увроня */
     --accent-color: #ff8dcb;
@@ -32,5 +33,7 @@
     --background-color: #fff1f7;
     /* Фон шапки */
     --header-image: url(../images/cover-image-light.png);
+    /* Показывать ли блок с декоративным 'REC' */
+    --rec-visible: hidden;
   }
 }

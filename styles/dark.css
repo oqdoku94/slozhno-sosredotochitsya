@@ -11,16 +11,13 @@
   --accent-color: #ff0070;
   /* Цвет фона страницы */
   --background-color: #000028;
-  /* Преобладающий шрифт */
-  --font-family: 'IBM Plex Mono', sans-serif;
-  /* Основной размер шрифта */
-  --font-size: 18px;
   /* Фон шапки */
   --header-image: url(../images/cover-image-dark.png);
+  /* Показывать ли блок с декоративным 'REC' */
+  --rec-visible: visible;
 }
 
 @media (prefers-color-scheme: dark) {
-
   :root {
     /* Основной цвет текста страницы */
     --color: #f1b2ce;
@@ -34,11 +31,9 @@
     --accent-color: #ff0070;
     /* Цвет фона страницы */
     --background-color: #000028;
-    /* Преобладающий шрифт */
-    --font-family: 'IBM Plex Mono', sans-serif;
-    /* Основной размер шрифта */
-    --font-size: 18px;
     /* Фон шапки */
     --header-image: url(../images/cover-image-dark.png);
+    /* Показывать ли блок с декоративным 'REC' */
+    --rec-visible: visible;
   }
 }
