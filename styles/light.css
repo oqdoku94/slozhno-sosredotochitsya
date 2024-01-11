@@ -3,47 +3,63 @@
 /* Класс добавится на страницу в случае переключения на светлую тему JS средствами */
 
 .page.theme_light {
-  /* Основной цвет текста страницы */
-  --color: #353430;
-  /* Цвет заголовка (в шапке и в подвале) */
-  --header-color: #ffc2e6;
-  /* Цвет текста выделенного кастомным фоном */
-  --colored-text: #353430;
-  /* Красный фон для выделенного текста */
-  --colored-text-background: #ff8dcb;
-  /* Акцентный цвет для кнопки и заголовков более низкого уровня */
-  --accent-color: #353430;
-  /* Цвет фона страницы */
-  --background-color: #fff1f7;
   /* Фон шапки */
   --header-image: url(../images/cover-image-light.png);
-  /* Показывать ли блок с декоративным 'REC' */
-  --rec-visible: hidden;
+  /* Цвет фона страницы */
+  --background-color: #fff1f7;
+  /* Основной цвет текста страницы */
+  --color: #353430;
+  /* Цвет выделенного (декор) текста */
+  --title-decor-text-color: #353430;
+  /* Цвет фона выделенного (декор) текста */
+  --title-decor-text-background-color: #ff8dcb;
+  /* Цвет заголовка в шапке */
+  --header-title-color: #ffc2e6;
+  /* Цвет тени заголовка в шапке */
+  --header-shadow-color: #ff8dcb;
   /* Цвет обоводки для кнопок смены темы при наведении */
-  --button-border-hover: rgb(50 49 45 / 0.4);
+  --theme-menu-button-border-hover-color: rgb(50 49 45 / 0.4);
+  /* Выделяемый цвет */
+  --accent-color: #353430;
+  /* Показывать ли блок с декоративным 'REC' */
+  --rec-block-display-value: none;
+}
+
+@media (min-width: 1024px) {
+  .page.theme_light {
+    --header-shadow-color: #ff0070;
+  }
 }
 
 /* Если у пользователя активирована светлая тема в ОС  */
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* Основной цвет текста страницы */
-    --color: #353430;
-    /* Цвет заголовка (в шапке и в подвале) */
-    --header-color: #ffc2e6;
-    /* Цвет текста выделенного кастомным фоном */
-    --colored-text: #353430;
-    /* Красный фон для выделенного текста */
-    --colored-text-background: #ff8dcb;
-    /* Акцентный цвет для кнопки и заголовков более низкого уровня */
-    --accent-color: #353430;
-    /* Цвет фона страницы */
-    --background-color: #fff1f7;
     /* Фон шапки */
     --header-image: url(../images/cover-image-light.png);
-    /* Показывать ли блок с декоративным 'REC' */
-    --rec-visible: hidden;
+    /* Цвет фона страницы */
+    --background-color: #fff1f7;
+    /* Основной цвет текста страницы */
+    --color: #353430;
+    /* Цвет выделенного (декор) текста */
+    --title-decor-text-color: #353430;
+    /* Цвет фона выделенного (декор) текста */
+    --title-decor-text-background-color: #ff8dcb;
+    /* Цвет заголовка в шапке */
+    --header-title-color: #ffc2e6;
+    /* Цвет тени заголовка в шапке */
+    --header-shadow-color: #ff8dcb;
     /* Цвет обоводки для кнопок смены темы при наведении */
-    --button-border-hover: rgb(50 49 45 / 0.4);
+    --theme-menu-button-border-hover-color: rgb(50 49 45 / 0.4);
+    /* Выделяемый цвет */
+    --accent-color: #353430;
+    /* Показывать ли блок с декоративным 'REC' */
+    --rec-block-display-value: none;
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      --header-shadow-color: #ff0070;
+    }
   }
 }
