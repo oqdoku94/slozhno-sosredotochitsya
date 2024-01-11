@@ -22,5 +22,5 @@
   /* Показывать ли блок с декоративным 'REC' */
   --rec-visible: visible;
   /* Размер внутреннего отступа для шапки для всех поддерживаемых разрешений */
-  --header-padding-value: clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem);
+  --padding-value: clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem);
 }
