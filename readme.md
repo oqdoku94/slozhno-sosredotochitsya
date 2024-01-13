@@ -1,1 +1,1 @@
-https://github.com/oqdoku94/slozhno-sosredotochitsya
+https://github.com/oqdoku94/slozhno-sosredotochitsya.git
