@@ -79,7 +79,8 @@
 
 .header__theme-menu-item:hover {
   /* Устанавливаем границу 1px solid с цветом в зависимости от темы (темная: rgba(255, 0, 112, 0.40), светлая: rgba(50, 49, 45, 0.40) */
-  border: 1px solid var(--theme-menu-button-border-hover-color, rgb(255 0 112 / 0.4));
+  border: 1px solid
+    var(--theme-menu-button-border-hover-color, rgb(255 0 112 / 0.4));
 }
 
 /* Эффект при активации кнопки (выборе темы) */
@@ -128,7 +129,10 @@
   /* Цвет текста (в зависимости от темы: темная - #db00ff, светлая - #ffc2e6) */
   color: var(--title-color, #db00ff);
   /* Динамический размер шрифта от 116px до 157px (по макету) */
-  font-size: var(--title-font-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
+  font-size: var(
+    --title-font-size,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
   /* Жирность шрифта - жирный 700 (по макету) */
   font-weight: 700;
   /* Интерлиньяж 82.5% от текущего шрифта (по макету) */
@@ -231,11 +235,15 @@
   /* Часть уголка по вертикали */
   border-inline-end: 1px solid var(--accent-color, #ff0070);
   /* Отступаем по горизонтали так же как и весь блок шапки */
-  inset-inline-end: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  inset-inline-end: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
   /* Отступаем по вертикали так же как и весь блок шапки */
-  inset-block-start: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  inset-block-start: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
 }
 
 /* Нижний уголок декоративной зоны */
@@ -254,11 +262,15 @@
   /* Часть уголка по вертикали */
   border-inline-start: 1px solid var(--accent-color, #ff0070);
   /* Отступаем по горизонтали так же как и весь блок шапки */
-  inset-inline-start: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  inset-inline-start: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
   /* Отступаем по вертикали так же как и весь блок шапки */
-  inset-block-end: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  inset-block-end: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
 }
 
 /* Блок декорации "REC с точкой" для темной темы */
@@ -275,10 +287,15 @@
   /* Отступ между элементами 10px (по макету) */
   gap: 10px;
   /* Отступаем по вертикали так же как и весь блок шапки плюс расстояние от уголка 9px */
-  inset-inline-end: calc(var(--header-padding-value, clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)) + 9px);
+  inset-inline-end: calc(
+    var(--header-padding-value, clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)) +
+      9px
+  );
   /* Отступаем по вертикали так же как и весь блок шапки */
-  inset-block-start: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  inset-block-start: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
 }
 
 /* Элемент "REC" декоративного блока "REC с точкой" */
@@ -321,8 +338,10 @@
   /* Добавляем отступы, в зависимости от размера экрана (для 375х668 - 40px, для планшетов и ноутбуков - 60px) */
   padding-block: clamp(2.5rem, 1.301rem + 5.102vw, 3.75rem);
   /* Внутренний отступ, в зависимости от размера экрана (для 375х668 - 10px, для планшетов и ноутбуков - 20px) */
-  padding-inline: var(--padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  padding-inline: var(
+    --padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
 }
 
 /* Блок вопросов */
@@ -416,12 +435,14 @@ h4.title-decor {
 }
 
 /* Блок "вопрос - ответ" для галереи */
+
 .image-question-block {
   /* Расстояние между вопросом и галереей 10px (по макету) */
   gap: 10px;
 }
 
 /* Галерея картинок */
+
 .gallery {
   /* Картинки в сетку */
   display: grid;
@@ -429,10 +450,16 @@ h4.title-decor {
   gap: 10px;
 }
 
-.gallery_image {
+/* Элемент галереи (картинка) */
+
+.gallery_item {
+  /* На всю ширину блока */
   inline-size: 100%;
+  /* На всю высоту блока */
   block-size: 100%;
+  /* Растягиваем на блок */
   object-fit: cover;
+  /* Масштабируем в центр */
   object-position: center;
 }
 
@@ -465,6 +492,7 @@ h4.title-decor {
   }
 
   /* Блок вопроса с картинками */
+
   .image-question-block {
     /* Сбрасываем общее разделение */
     grid-template: auto / auto;
@@ -473,12 +501,14 @@ h4.title-decor {
   }
 
   /* Блок вопроса для картинок */
+
   .image-question-block .main__answer-title {
     /* В первой строке на все 3 столбца */
     grid-column: 1 / span 3;
   }
 
   /* Блок с картинками */
+
   .gallery {
     /* На все 3 столбца */
     grid-column: 1 / span 3;
@@ -489,12 +519,14 @@ h4.title-decor {
   }
 
   /* Картинка "Солнце" */
+
   .sun-image {
     /* 1 строка 1-2 столбцы */
     grid-column: 1 / span 2;
   }
 
   /* Картинка "Мороженое" */
+
   .ice-image {
     /* 3 столбец */
     grid-column: 3;
@@ -503,6 +535,7 @@ h4.title-decor {
   }
 
   /* Картинка "Музыка" */
+
   .tape-image {
     /* 1 столбец */
     grid-column: 1;
@@ -511,6 +544,7 @@ h4.title-decor {
   }
 
   /* Картинка "Улица" */
+
   .street-image {
     /* 2-3 столбец */
     grid-column: 2 / span 2;
@@ -555,6 +589,7 @@ h4.title-decor {
 /* Начало блока footer */
 
 /* Основной блок подвала */
+
 .footer {
   /* Отступ со всех сторон  */
   padding: var(--padding-value, clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
@@ -573,11 +608,15 @@ h4.title-decor {
 }
 
 /* Заголовок */
+
 .footer-title {
   /* Цвет текста (в зависимости от темы: темная - #db00ff, светлая - #ffc2e6) */
   color: var(--title-color, #db00ff);
   /* Динамический размер шрифта от 116px до 157px (по макету) */
-  font-size: var(--title-font-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
+  font-size: var(
+    --title-font-size,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
   /* Жирность шрифта - жирный 700 (по макету) */
   font-weight: 700;
   /* Интерлиньяж 82.5% от текущего шрифта (по макету) */
