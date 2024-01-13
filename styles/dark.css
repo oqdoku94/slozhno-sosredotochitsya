@@ -23,4 +23,6 @@
   --accent-color: #ff0070;
   /* Показывать ли блок с декоративным 'REC' */
   --rec-block-display-value: grid;
+  /* Цвет тени в ссылках в блоке текста ответов */
+  --link-shadow-color: #ff0070;
 }

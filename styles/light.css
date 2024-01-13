@@ -23,6 +23,8 @@
   --accent-color: #353430;
   /* Показывать ли блок с декоративным 'REC' */
   --rec-block-display-value: none;
+  /* Цвет тени в ссылках в блоке текста ответов */
+  --link-shadow-color: #ff8dcb;
 }
 
 @media (min-width: 1024px) {
@@ -55,6 +57,8 @@
     --accent-color: #353430;
     /* Показывать ли блок с декоративным 'REC' */
     --rec-block-display-value: none;
+    /* Цвет тени в ссылках в блоке текста ответов */
+    --link-shadow-color: #ff8dcb;
   }
 
   @media (min-width: 1024px) {
