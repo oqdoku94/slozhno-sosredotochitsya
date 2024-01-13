@@ -14,9 +14,9 @@
   /* Цвет фона выделенного (декор) текста */
   --title-decor-text-background-color: #ff8dcb;
   /* Цвет заголовка в шапке */
-  --header-title-color: #ffc2e6;
+  --title-color: #ffc2e6;
   /* Цвет тени заголовка в шапке */
-  --header-shadow-color: #ff8dcb;
+  --title-shadow-color: #ff8dcb;
   /* Цвет обоводки для кнопок смены темы при наведении */
   --theme-menu-button-border-hover-color: rgb(50 49 45 / 0.4);
   /* Выделяемый цвет */
@@ -29,7 +29,7 @@
 
 @media (min-width: 1024px) {
   .page.theme_light {
-    --header-shadow-color: #ff0070;
+    --title-shadow-color: #ff0070;
   }
 }
 
@@ -48,9 +48,9 @@
     /* Цвет фона выделенного (декор) текста */
     --title-decor-text-background-color: #ff8dcb;
     /* Цвет заголовка в шапке */
-    --header-title-color: #ffc2e6;
+    --title-color: #ffc2e6;
     /* Цвет тени заголовка в шапке */
-    --header-shadow-color: #ff8dcb;
+    --title-shadow-color: #ff8dcb;
     /* Цвет обоводки для кнопок смены темы при наведении */
     --theme-menu-button-border-hover-color: rgb(50 49 45 / 0.4);
     /* Выделяемый цвет */
@@ -63,7 +63,7 @@
 
   @media (min-width: 1024px) {
     :root {
-      --header-shadow-color: #ff0070;
+      --title-shadow-color: #ff0070;
     }
   }
 }

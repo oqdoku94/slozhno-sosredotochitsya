@@ -14,9 +14,9 @@
   /* Цвет фона выделенного (декор) текста */
   --title-decor-text-background-color: #ff0070;
   /* Цвет заголовка в шапке */
-  --header-title-color: #db00ff;
+  --title-color: #db00ff;
   /* Цвет тени заголовка в шапке */
-  --header-shadow-color: #ff0070;
+  --title-shadow-color: #ff0070;
   /* Цвет обоводки для кнопок смены темы при наведении */
   --theme-menu-button-border-hover-color: rgb(255 0 112 / 0.4);
   /* Выделяемый цвет */
