@@ -204,9 +204,6 @@
     --padding-value,
     clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
   );
-}
-
-.main__question-list {
   display: grid;
   row-gap: clamp(3.125rem, 1.3265rem + 7.6531vw, 5rem);
 }
