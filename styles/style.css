@@ -46,7 +46,8 @@
 }
 
 .header__theme-menu-item:hover {
-  border: 1px solid var(--theme-menu-button-border-hover-color, rgb(255 0 112 / 0.4));
+  border: 1px solid
+    var(--theme-menu-button-border-hover-color, rgb(255 0 112 / 0.4));
 }
 
 .header__theme-menu-item:has(.header__theme-menu-button_active) {
@@ -73,8 +74,10 @@
 .header-title {
   margin-inline-start: clamp(-1.25rem, -5.1151vw + 1.202rem, 0rem);
   color: var(--title-color, #db00ff);
-  font-size: var(--title-font-size,
-      clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
+  font-size: var(
+    --title-font-size,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
   font-weight: 700;
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--title-shadow-color, #ff0070);
@@ -94,14 +97,12 @@
 }
 
 @media (width >=768px) {
-
   .header-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
 @media (width >=1024px) {
-
   .header__theme-menu {
     align-self: self-start;
   }
@@ -133,10 +134,14 @@
   inline-size: 25px;
   border-block-start: 1px solid var(--accent-color, #ff0070);
   border-inline-end: 1px solid var(--accent-color, #ff0070);
-  inset-inline-end: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
-  inset-block-start: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  inset-inline-end: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
+  inset-block-start: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
 }
 
 .decorated-zone::after {
@@ -146,10 +151,14 @@
   inline-size: 25px;
   border-block-end: 1px solid var(--accent-color, #ff0070);
   border-inline-start: 1px solid var(--accent-color, #ff0070);
-  inset-inline-start: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
-  inset-block-end: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  inset-inline-start: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
+  inset-block-end: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
 }
 
 .decorated-zone .decorated-zone__rec {
@@ -158,9 +167,14 @@
   grid-template-columns: repeat(2, auto);
   align-items: center;
   gap: 10px;
-  inset-inline-end: calc(var(--header-padding-value, clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)) + 9px);
-  inset-block-start: var(--header-padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  inset-inline-end: calc(
+    var(--header-padding-value, clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)) +
+      9px
+  );
+  inset-block-start: var(
+    --header-padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
 }
 
 .decorated-zone .decorated-zone__rec::before {
@@ -186,8 +200,10 @@
 
 .main {
   padding-block: clamp(2.5rem, 1.301rem + 5.102vw, 3.75rem);
-  padding-inline: var(--padding-value,
-      clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem));
+  padding-inline: var(
+    --padding-value,
+    clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem)
+  );
 }
 
 .main__question-list {
@@ -257,7 +273,6 @@
 }
 
 @media (width >=768px) {
-
   .main__question-item {
     grid-template-columns: clamp(14.75rem, -0.1206rem + 30.9804vw, 19.6875rem) auto;
   }
@@ -308,7 +323,6 @@
 }
 
 @media (width >=1024px) {
-
   .what-question-block .main__answer-list {
     grid-template-columns: repeat(3, minmax(315px, auto));
   }
@@ -319,7 +333,6 @@
 }
 
 @media (width > 1024px) {
-
   .main__question-item {
     grid-template-columns: minmax(14.75rem, calc(-0.1206rem + 30.9804vw)) auto;
   }
@@ -345,15 +358,16 @@
 
 .footer-title {
   color: var(--title-color, #db00ff);
-  font-size: var(--title-font-size,
-      clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
+  font-size: var(
+    --title-font-size,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
   font-weight: 700;
   line-height: 82.5%;
   text-shadow: 2px 2px 0 var(--title-shadow-color, #ff0070);
 }
 
 @media (width >=768px) {
-
   .footer-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
