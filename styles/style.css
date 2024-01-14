@@ -28,7 +28,7 @@
   color: var(--accent-color, #ff0070);
 }
 
-.header__menu {
+.header__theme-menu {
   align-self: center;
 }
 
@@ -101,7 +101,7 @@
 
 @media (width >=1024px) {
 
-  .header__menu {
+  .header__theme-menu {
     align-self: self-start;
   }
 
