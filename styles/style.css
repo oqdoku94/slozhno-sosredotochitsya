@@ -40,6 +40,7 @@
 }
 
 .header__theme-menu-item {
+  border: 1px solid transparent;
   height: 26px;
   padding-inline: 6.5px;
 }
