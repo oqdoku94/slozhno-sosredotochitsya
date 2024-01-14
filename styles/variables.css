@@ -1,30 +1,15 @@
-/* Стили по умолчанию (темная тема) */
-
 :root {
-  /* Фон шапки */
-  --header-image: url(../images/cover-image-dark.png);
-  /* Цвет фона страницы */
+  --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
-  /* Основной цвет текста страницы */
   --color: #f1b2ce;
-  /* Цвет выделенного (декор) текста */
   --title-decor-text-color: #000028;
-  /* Цвет фона выделенного (декор) текста */
   --title-decor-text-background-color: #ff0070;
-  /* Размер шрифта для заголовков в шапке и подвале */
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  /* Цвет заголовка в шапке и подвале */
   --title-color: #db00ff;
-  /* Цвет тени заголовка в шапке и подвале */
   --title-shadow-color: #ff0070;
-  /* Цвет обоводки для кнопок смены темы при наведении */
   --theme-menu-button-border-hover-color: rgb(255 0 112 / 0.4);
-  /* Выделяемый цвет */
   --accent-color: #ff0070;
-  /* Показывать ли блок с декоративным 'REC' */
   --rec-visible: visible;
-  /* Размер внутреннего отступа для шапки для всех поддерживаемых разрешений */
   --padding-value: clamp(0.625rem, 0.024rem + 2.5575vw, 1.25rem);
-  /* Цвет тени в ссылках в блоке текста ответов */
   --link-shadow-color: #ff0070;
 }

@@ -1,29 +1,14 @@
-/* Переменные светлой темы */
-
-/* Класс добавится на страницу в случае переключения на светлую тему JS средствами */
-
 .page.theme_light {
-  /* Фон шапки */
-  --header-image: url(../images/cover-image-light.png);
-  /* Цвет фона страницы */
+  --background-image: url(../images/cover-image-light.png);
   --background-color: #fff1f7;
-  /* Основной цвет текста страницы */
   --color: #353430;
-  /* Цвет выделенного (декор) текста */
   --title-decor-text-color: #353430;
-  /* Цвет фона выделенного (декор) текста */
   --title-decor-text-background-color: #ff8dcb;
-  /* Цвет заголовка в шапке */
   --title-color: #ffc2e6;
-  /* Цвет тени заголовка в шапке */
   --title-shadow-color: #ff8dcb;
-  /* Цвет обоводки для кнопок смены темы при наведении */
   --theme-menu-button-border-hover-color: rgb(50 49 45 / 0.4);
-  /* Выделяемый цвет */
   --accent-color: #353430;
-  /* Показывать ли блок с декоративным 'REC' */
   --rec-block-display-value: none;
-  /* Цвет тени в ссылках в блоке текста ответов */
   --link-shadow-color: #ff8dcb;
 }
 
@@ -33,31 +18,18 @@
   }
 }
 
-/* Если у пользователя активирована светлая тема в ОС  */
-
 @media (prefers-color-scheme: light) {
   :root {
-    /* Фон шапки */
-    --header-image: url(../images/cover-image-light.png);
-    /* Цвет фона страницы */
+    --background-image: url(../images/cover-image-light.png);
     --background-color: #fff1f7;
-    /* Основной цвет текста страницы */
     --color: #353430;
-    /* Цвет выделенного (декор) текста */
     --title-decor-text-color: #353430;
-    /* Цвет фона выделенного (декор) текста */
     --title-decor-text-background-color: #ff8dcb;
-    /* Цвет заголовка в шапке */
     --title-color: #ffc2e6;
-    /* Цвет тени заголовка в шапке */
     --title-shadow-color: #ff8dcb;
-    /* Цвет обоводки для кнопок смены темы при наведении */
     --theme-menu-button-border-hover-color: rgb(50 49 45 / 0.4);
-    /* Выделяемый цвет */
     --accent-color: #353430;
-    /* Показывать ли блок с декоративным 'REC' */
     --rec-block-display-value: none;
-    /* Цвет тени в ссылках в блоке текста ответов */
     --link-shadow-color: #ff8dcb;
   }
 

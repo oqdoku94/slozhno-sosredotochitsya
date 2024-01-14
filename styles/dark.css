@@ -1,28 +1,13 @@
-/* Переменные темной темы */
-
-/* Класс добавится на страницу в случае переключения на темную тему JS средствами */
-
 .page.theme_dark {
-  /* Фон шапки */
-  --header-image: url(../images/cover-image-dark.png);
-  /* Цвет фона страницы */
+  --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
-  /* Основной цвет текста страницы */
   --color: #f1b2ce;
-  /* Цвет выделенного (декор) текста */
   --title-decor-text-color: #000028;
-  /* Цвет фона выделенного (декор) текста */
   --title-decor-text-background-color: #ff0070;
-  /* Цвет заголовка в шапке */
   --title-color: #db00ff;
-  /* Цвет тени заголовка в шапке */
   --title-shadow-color: #ff0070;
-  /* Цвет обоводки для кнопок смены темы при наведении */
   --theme-menu-button-border-hover-color: rgb(255 0 112 / 0.4);
-  /* Выделяемый цвет */
   --accent-color: #ff0070;
-  /* Показывать ли блок с декоративным 'REC' */
   --rec-block-display-value: grid;
-  /* Цвет тени в ссылках в блоке текста ответов */
   --link-shadow-color: #ff0070;
 }
